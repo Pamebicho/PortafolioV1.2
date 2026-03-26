@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <!-- META Y SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pamela Gutiérrez | Portafolio</title>
+    <meta
+      name="description"
+      content="Portafolio de Pamela Gutiérrez, estudiante de Ingeniería en Computación e Informática, enfocada en desarrollo Full-Stack JS, ciberseguridad y alfabetización digital."
+    />
+    <meta
+      name="keywords"
+      content="Pamela Gutiérrez, portafolio, Ingeniería en Computación e Informática, Full-Stack JS, ciberseguridad, desarrollo web"
+    />
+    <meta name="author" content="Pamela Gutiérrez" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.robertlong.design/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.robertlong.design/" />
+    <meta property="og:title" content="Pamela Gutiérrez — Portafolio" />
+    <meta
+      property="og:description"
+      content="Portafolio de Pamela Gutiérrez, estudiante de Ingeniería en Computación e Informática con enfoque en Full-Stack JS, ciberseguridad y alfabetización digital."
+    />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pamela Gutiérrez — Portafolio" />
+    <meta
+      name="twitter:description"
+      content="Portafolio de Pamela Gutiérrez, estudiante de Ingeniería en Computación e Informática."
+    />
+    <meta name="twitter:image" content="assets/img/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <meta name="theme-color" content="#FF6B35" />
+
+    <!-- Datos Estructurados JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pamela Gutiérrez",
+        "jobTitle": "Ingeniería en Computación e Informática",
+        "description": "enfocada en desarrollo Full-Stack JS, ciberseguridad y alfabetización digital",
+        "url": "https://www.robertlong.design",
+        "sameAs": [
+          "https://twitter.com/robertlong",
+          "https://behance.net/robertlong"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santiago",
+          "addressCountry": "CL"
+        }
+      }
+    </script>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Globales -->
+    <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/utilities.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+
+    <!-- CSS Features -->
+    <link rel="stylesheet" href="./features/navbar/navbar.css" />
+    <link rel="stylesheet" href="./features/hero/hero.css" />
+    <link rel="stylesheet" href="./features/about/about.css" />
+    <link rel="stylesheet" href="./features/skills/skills.css" />
+    <link rel="stylesheet" href="./features/projects/projects.css" />
+    <link rel="stylesheet" href="./features/contact/contact.css" />
+  </head>
+
+  <body>
+    <!-- Saltar al contenido — Accesibilidad -->
+    <a href="#hero" class="visually-hidden-focusable"
+      >Saltar al contenido principal</a
+    >
+
+    <!-- ================================================================
+      NAVBAR — Barra de navegación fija
+      ================================================================ -->
+    <header class="site-header">
+      <nav
+        class="navbar navbar-expand-lg portfolio-navbar fixed-top"
+        id="siteNavbar"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand portfolio-navbar__brand"
+            href="#inicio"
+            aria-label="Ir al inicio"
+          >
+            <span class="icon-badge portfolio-navbar__brand-icon">
+              <i class="bi bi-code-slash"></i>
+            </span>
+            <span class="portfolio-navbar__brand-text">Pamela Gutiérrez</span>
+          </a>
+
+          <button
+            class="navbar-toggler portfolio-navbar__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainNavbar"
+          >
+            <ul class="navbar-nav portfolio-navbar__nav">
+              <li class="nav-item">
+                <a class="nav-link portfolio-navbar__link active" href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link portfolio-navbar__link" href="#sobre-mi"
+                  >Sobre mí</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link portfolio-navbar__link" href="#habilidades"
+                  >Habilidades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link portfolio-navbar__link" href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link portfolio-navbar__link" href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <a
+              href="#proyectos"
+              class="btn-portfolio btn-portfolio--primary portfolio-navbar__cta"
+            >
+              <i class="bi bi-window-stack"></i>
+              <span>Ver proyectos</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /NAVBAR -->
+
+    <main id="contenido-principal">
+      <!-- ==============================================================
+        SECCIÓN 1: HERO
+        ============================================================== -->
+      <section class="hero" id="inicio">
+        <div class="container hero__container">
+          <div class="row align-items-center hero__row g-5">
+            <div class="col-lg-6">
+              <div class="hero__content">
+                <span class="section-eyebrow hero__eyebrow">
+                  <i class="bi bi-code-slash"></i>
+                  Portafolio profesional
+                </span>
+
+                <h1 class="hero__title">
+                  Pamela Gutiérrez
+                  <span class="hero__title-highlight"
+                    >Full-Stack Developer</span
+                  >
+                </h1>
+
+                <p class="hero__subtitle">
+                  Ingeniera en Computación e Informática, enfocada en desarrollo
+                  web con JavaScript e interés en ciberseguridad, sistemas y
+                  soluciones digitales con impacto real.
+                </p>
+
+                <div class="hero__badges">
+                  <span class="hero__badge"
+                    ><i class="bi bi-filetype-js"></i> JavaScript</span
+                  >
+                  <span class="hero__badge"
+                    ><i class="bi bi-hdd-network"></i> Node.js</span
+                  >
+                  <span class="hero__badge"
+                    ><i class="bi bi-database"></i> PostgreSQL</span
+                  >
+                  <span class="hero__badge"
+                    ><i class="bi bi-shield-lock"></i> Ciberseguridad</span
+                  >
+                </div>
+
+                <div class="hero__actions">
+                  <a
+                    href="#proyectos"
+                    class="btn-portfolio btn-portfolio--primary"
+                  >
+                    <i class="bi bi-window-stack"></i>
+                    Ver proyectos
+                  </a>
+
+                  <a
+                    href="#contacto"
+                    class="btn-portfolio btn-portfolio--outline"
+                  >
+                    <i class="bi bi-envelope"></i>
+                    Contacto
+                  </a>
+                </div>
+
+                <div class="hero__social">
+                  <a
+                    href="https://github.com/Pamebicho"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hero__social-link"
+                    aria-label="Ir a GitHub"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/pamela-gutierrez-m/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hero__social-link"
+                    aria-label="Ir a LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+
+                  <a
+                    href="https://wa.me/56990757697?text=Hola%20Pamela,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hero__social-link"
+                    aria-label="Contactar por WhatsApp"
+                  >
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero__visual">
+                <div class="hero__glow hero__glow--primary"></div>
+                <div class="hero__glow hero__glow--accent"></div>
+
+                <div class="hero__card">
+                  <div class="hero__card-header">
+                    <span class="hero__card-dot"></span>
+                    <span class="hero__card-dot"></span>
+                    <span class="hero__card-dot"></span>
+                  </div>
+
+                  <div class="hero__card-body">
+                    <div class="hero__code-line hero__code-line--lg"></div>
+                    <div class="hero__code-line hero__code-line--md"></div>
+                    <div class="hero__code-line hero__code-line--sm"></div>
+                    <div class="hero__code-grid">
+                      <div class="hero__code-block"></div>
+                      <div class="hero__code-block"></div>
+                      <div class="hero__code-block"></div>
+                      <div class="hero__code-block"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero__floating hero__floating--top">
+                  <i class="bi bi-laptop"></i>
+                  Desarrollo web
+                </div>
+
+                <div class="hero__floating hero__floating--bottom">
+                  <i class="bi bi-shield-lock"></i>
+                  Enfoque en seguridad
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /HERO -->
+
+      <!-- ==============================================================
+        SECCIÓN 2: SOBRE MÍ
+        ============================================================== -->
+      <section class="about site-section" id="sobre-mi">
+        <div class="container">
+          <div class="section-heading text-center reveal">
+            <h2 class="section-title about__title">
+              Sobre <span class="text-gradient"> mí </span>
+            </h2>
+          </div>
+
+          <div class="row g-5 align-items-center about__layout">
+            <div class="col-lg-4">
+              <div class="about__stats">
+                <article class="about__stat-item">
+                  <div class="about__stat-icon">
+                    <i class="bi bi-window-stack"></i>
+                  </div>
+                  <div class="about__stat-number" data-target="3">0</div>
+                  <p class="about__stat-label">
+                    Proyectos principales desarrollados
+                  </p>
+                </article>
+
+                <article class="about__stat-item">
+                  <div class="about__stat-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <div class="about__stat-number" data-target="4">0</div>
+                  <p class="about__stat-label">
+                    Tecnologías base en mi stack actual
+                  </p>
+                </article>
+
+                <article class="about__stat-item">
+                  <div class="about__stat-icon">
+                    <i class="bi bi-shield-lock"></i>
+                  </div>
+                  <div class="about__stat-number" data-target="1">0</div>
+                  <p class="about__stat-label">
+                    Área complementaria de interés: ciberseguridad
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="about__content">
+                <p class="about__text about__text--highlight">
+                  Soy Ingeniera en Computación e Informática, enfocada en el
+                  desarrollo web Full-Stack con JavaScript y en la construcción
+                  de soluciones digitales útiles, claras y bien estructuradas.
+                </p>
+
+                <p class="about__text">
+                  Me interesa trabajar en proyectos que conecten tecnología con
+                  necesidades reales, especialmente en áreas como sistemas,
+                  digitalización de procesos y experiencia de usuario funcional.
+                </p>
+
+                <p class="about__text">
+                  Actualmente sigo fortaleciendo mi stack con herramientas como
+                  Node.js, Express, PostgreSQL, Bootstrap y GitHub, mientras
+                  profundizo mi interés en ciberseguridad y buenas prácticas de
+                  desarrollo.
+                </p>
+
+                <a href="#proyectos" class="about__btn">
+                  <i class="bi bi-arrow-right-circle"></i>
+                  Ver proyectos
+                </a>
+
+                <div class="about__signature">
+                  <span class="about__signature-line"></span>
+                  <p class="about__signature-name">Pamela Gutiérrez</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /SOBRE MÍ -->
+
+      <!-- Currículum — Paso 3 -->
+      <section class="skills site-section" id="habilidades">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 class="section-title skills__title">Habilidades</h2>
+          </div>
+
+          <div class="row g-5 skills__layout">
+            <div class="col-lg-3">
+              <div class="skills__sidebar">
+                <div class="skills__sidebar-item">
+                  <span class="skills__sidebar-icon">
+                    <i class="bi bi-window"></i>
+                  </span>
+                  <span class="skills__sidebar-label">Frontend</span>
+                </div>
+
+                <div class="skills__sidebar-item">
+                  <span class="skills__sidebar-icon">
+                    <i class="bi bi-hdd-network"></i>
+                  </span>
+                  <span class="skills__sidebar-label">Backend</span>
+                </div>
+
+                <div class="skills__sidebar-item">
+                  <span class="skills__sidebar-icon">
+                    <i class="bi bi-database"></i>
+                  </span>
+                  <span class="skills__sidebar-label">Base de datos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="skills__content">
+                <p class="skills__intro reveal">
+                  Actualmente estoy fortaleciendo un stack orientado al
+                  desarrollo web Full-Stack, con foco en JavaScript,
+                  construcción de interfaces claras, lógica de servidor,
+                  persistencia de datos y buenas prácticas de desarrollo.
+                </p>
+
+                <div class="skills__group reveal">
+                  <h3 class="skills__group-title">Stack principal</h3>
+
+                  <div class="skills__list">
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">HTML</span>
+                        <span class="skills__level">Base sólida</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">CSS</span>
+                        <span class="skills__level">Intermedio</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">JavaScript</span>
+                        <span class="skills__level">En desarrollo</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">Node.js / Express</span>
+                        <span class="skills__level">En práctica</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">PostgreSQL</span>
+                        <span class="skills__level">Base funcional</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+
+                    <div class="skills__item">
+                      <div class="skills__item-top">
+                        <span class="skills__name">Git / GitHub</span>
+                        <span class="skills__level">Uso constante</span>
+                      </div>
+                      <div class="skills__dots">
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span class="is-active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row g-4 skills__info">
+                  <div class="col-md-4">
+                    <div class="skills__card reveal">
+                      <h3 class="skills__card-title">Formación</h3>
+                      <p class="skills__card-text">
+                        Ingeniería en Computación e Informática, con enfoque en
+                        desarrollo de software y construcción de soluciones web.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="skills__card reveal">
+                      <h3 class="skills__card-title">Herramientas</h3>
+                      <ul class="skills__card-list">
+                        <li>Bootstrap</li>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="skills__card reveal">
+                      <h3 class="skills__card-title">Intereses</h3>
+                      <ul class="skills__card-list">
+                        <li>Desarrollo Full-Stack</li>
+                        <li>Ciberseguridad</li>
+                        <li>Sistemas</li>
+                        <li>Alfabetización digital</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos — Paso 4 -->
+      <section id="proyectos" class="section" aria-label="Proyectos">
+        <div class="container">
+          <p
+            style="
+              color: var(--color-text-muted);
+              text-align: center;
+              padding: 4rem 0;
+            "
+          >
+            Sección Proyectos — Próximo paso
+          </p>
+        </div>
+      </section>
+
+      <!-- Precios — Paso 5 -->
+      <section id="precios" class="section" aria-label="Tabla de Precios">
+        <div class="container">
+          <p
+            style="
+              color: var(--color-text-muted);
+              text-align: center;
+              padding: 4rem 0;
+            "
+          >
+            Sección — Próximo paso
+          </p>
+        </div>
+      </section>
+
+      <!-- Blog — Paso 6 -->
+      <section id="blog" class="section" aria-label="Blog">
+        <div class="container">
+          <p
+            style="
+              color: var(--color-text-muted);
+              text-align: center;
+              padding: 4rem 0;
+            "
+          >
+            Sección Blog — Próximo paso
+          </p>
+        </div>
+      </section>
+
+      <!-- Clientes — Paso 7 -->
+      <section id="clientes" class="section" aria-label="Clientes">
+        <div class="container">
+          <p
+            style="
+              color: var(--color-text-muted);
+              text-align: center;
+              padding: 4rem 0;
+            "
+          >
+            Sección Clientes — Próximo paso
+          </p>
+        </div>
+      </section>
+
+      <!-- Contacto — Paso 8 -->
+      <section id="contacto" class="section" aria-label="Contacto">
+        <div class="container">
+          <p
+            style="
+              color: var(--color-text-muted);
+              text-align: center;
+              padding: 4rem 0;
+            "
+          >
+            Sección Contacto — Próximo paso
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer
+      role="contentinfo"
+      style="
+        padding: 1.5rem;
+        text-align: center;
+        border-top: 1px solid var(--color-border);
+        color: var(--color-text-muted);
+        font-size: 0.75rem;
+      "
+    >
+      <p>
+        &copy; <span id="anioActual"></span> Pamela Gutiérrez. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+    <script src="./features/navbar/navbar.js"></script>
+    <script src="./features/about/about.js"></script>
+    <script src="./features/hero/hero.js"></script>
+    <script src="./features/skills/skills.js"></script>
+    <script>
+      document.getElementById("anioActual").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
