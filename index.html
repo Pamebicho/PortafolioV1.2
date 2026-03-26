@@ -845,21 +845,6 @@
       </section>
       <!-- /Proyectos -->
 
-      <!-- Precios — Paso 5 -->
-      <section id="precios" class="section" aria-label="Tabla de Precios">
-        <div class="container">
-          <p
-            style="
-              color: var(--color-text-muted);
-              text-align: center;
-              padding: 4rem 0;
-            "
-          >
-            Sección — Próximo paso
-          </p>
-        </div>
-      </section>
-
       <!-- Blog — Paso 6 -->
       <section id="blog" class="section" aria-label="Blog">
         <div class="container">
@@ -875,35 +860,108 @@
         </div>
       </section>
 
-      <!-- Clientes — Paso 7 -->
-      <section id="clientes" class="section" aria-label="Clientes">
+      <!-- Contacto -->
+      <section id="contacto" class="contact site-section" aria-label="Contacto">
         <div class="container">
-          <p
-            style="
-              color: var(--color-text-muted);
-              text-align: center;
-              padding: 4rem 0;
-            "
-          >
-            Sección Clientes — Próximo paso
-          </p>
-        </div>
-      </section>
+          <div class="section-heading text-center">
+            <span class="section-eyebrow">Contacto</span>
+            <h2 class="section-title">Contáctame</h2>
+          </div>
 
-      <!-- Contacto — Paso 8 -->
-      <section id="contacto" class="section" aria-label="Contacto">
-        <div class="container">
-          <p
-            style="
-              color: var(--color-text-muted);
-              text-align: center;
-              padding: 4rem 0;
-            "
-          >
-            Sección Contacto — Próximo paso
-          </p>
+          <div class="contact__layout">
+            <!-- INFO IZQUIERDA -->
+            <div class="contact__info">
+              <!-- Teléfono -->
+              <div class="contact__block">
+                <i class="bi bi-telephone contact__icon"></i>
+                <span class="contact__text">+56 9 9075 7697</span>
+              </div>
+
+              <!-- Email -->
+              <div class="contact__block">
+                <i class="bi bi-envelope contact__icon"></i>
+                <a
+                  href="mailto:gutierrez.pamela.a@gmail.com"
+                  class="contact__text"
+                >
+                  gutierrez.pamela.a@gmail.com
+                </a>
+              </div>
+
+              <!-- Redes -->
+              <div class="contact__social">
+                <a
+                  href="https://github.com/Pamebicho"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/pamela-gutierrez-m/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a
+                  href="https://wa.me/56990757697"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- LÍNEA DIVISORIA -->
+            <div class="contact__divider"></div>
+
+            <!-- FORMULARIO DERECHA -->
+            <div class="contact__form">
+              <form>
+                <div class="contact__field">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="email">Correo</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Ingresa tu correo"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-portfolio btn-portfolio--primary"
+                >
+                  <i class="bi bi-send"></i>
+                  <span>Enviar mensaje</span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- /Contactame -->
     </main>
 
     <!-- Pie de página -->
