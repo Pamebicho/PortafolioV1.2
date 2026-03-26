@@ -16,11 +16,11 @@
     />
     <meta name="author" content="Pamela Gutiérrez" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.robertlong.design/" />
+    <link rel="canonical" href="#" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.robertlong.design/" />
+    <meta property="og:url" content="#" />
     <meta property="og:title" content="Pamela Gutiérrez — Portafolio" />
     <meta
       property="og:description"
@@ -396,7 +396,6 @@
           </div>
         </div>
       </section>
-      <!-- /SOBRE MÍ -->
 
       <!-- Currículum — Paso 3 -->
       <section class="skills site-section" id="habilidades">
@@ -591,19 +590,260 @@
       </section>
 
       <!-- Proyectos — Paso 4 -->
-      <section id="proyectos" class="section" aria-label="Proyectos">
+      <section id="proyectos" class="site-section" aria-label="Proyectos">
         <div class="container">
-          <p
-            style="
-              color: var(--color-text-muted);
-              text-align: center;
-              padding: 4rem 0;
-            "
-          >
-            Sección Proyectos — Próximo paso
-          </p>
+          <div class="section-heading text-center">
+            <span class="section-eyebrow">Portafolio</span>
+            <h2 class="section-title">Mis proyectos</h2>
+            <p class="section-description mx-auto">
+              Proyectos desarrollados en mi formación en desarrollo web, backend
+              y soluciones digitales.
+            </p>
+          </div>
+
+          <div class="projects__grid">
+            <!-- KanbanPro -->
+            <article class="project-card">
+              <div class="project-card__media">
+                <img
+                  src="assets/img/projects/kanban.jpg"
+                  alt="KanbanPro app"
+                  class="project-card__image"
+                />
+
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-actions">
+                    <a
+                      href="#"
+                      class="btn-portfolio btn-portfolio--primary project-card__overlay-btn"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span>Ver demo</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-portfolio btn-portfolio--outline project-card__overlay-btn"
+                    >
+                      <i class="bi bi-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">KanbanPro</h3>
+                <p class="project-card__description">
+                  Aplicación web para gestión de tareas mediante tablero Kanban
+                  con autenticación y persistencia de datos.
+                </p>
+
+                <div class="project-card__tags">
+                  <span class="project-card__tag">Node.js</span>
+                  <span class="project-card__tag">Express</span>
+                  <span class="project-card__tag">Handlebars</span>
+                  <span class="project-card__tag">PostgreSQL</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- EcoSurplus -->
+            <article class="project-card">
+              <div class="project-card__media">
+                <img
+                  src="assets/img/projects/ecosurplus.jpg"
+                  alt="EcoSurplus API"
+                  class="project-card__image"
+                />
+
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-actions">
+                    <a
+                      href="#"
+                      class="btn-portfolio btn-portfolio--primary project-card__overlay-btn"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span>Ver demo</span>
+                    </a>
+                    <a
+                      href="https://github.com/Pamebicho/EcoSurplus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-portfolio btn-portfolio--outline project-card__overlay-btn"
+                    >
+                      <i class="bi bi-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">EcoSurplus</h3>
+                <p class="project-card__description">
+                  API REST para gestionar usuarios, comercios y ofertas en una
+                  solución orientada a reducir el desperdicio de alimentos.
+                </p>
+
+                <div class="project-card__tags">
+                  <span class="project-card__tag">API REST</span>
+                  <span class="project-card__tag">Node.js</span>
+                  <span class="project-card__tag">Express</span>
+                  <span class="project-card__tag">JWT</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Emoratec -->
+            <article class="project-card">
+              <div class="project-card__media">
+                <img
+                  src="assets/img/emoratec.png"
+                  alt="Sitio web Emoratec"
+                  class="project-card__image"
+                />
+
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-actions">
+                    <a
+                      href="https://emoratec.cl/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-portfolio btn-portfolio--primary project-card__overlay-btn"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span>Ver sitio</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">Emoratec</h3>
+                <p class="project-card__description">
+                  Sitio web corporativo optimizado para SEO, con estructura
+                  clara de servicios y enfoque en conversión.
+                </p>
+
+                <div class="project-card__tags">
+                  <span class="project-card__tag">HTML</span>
+                  <span class="project-card__tag">CSS</span>
+                  <span class="project-card__tag">SEO</span>
+                  <span class="project-card__tag">Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Gourmet Go -->
+            <article class="project-card">
+              <div class="project-card__media">
+                <img
+                  src="assets/img/gourmet_go.png"
+                  alt="Proyecto Gourmet Go"
+                  class="project-card__image"
+                />
+
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-actions">
+                    <a
+                      href="https://pamebicho.github.io/Gourmet_Go_Buscador_de_Recetas/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-portfolio btn-portfolio--primary project-card__overlay-btn"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span>Ver demo</span>
+                    </a>
+                    <a
+                      href="https://github.com/Pamebicho/Gourmet_Go_Buscador_de_Recetas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-portfolio btn-portfolio--outline project-card__overlay-btn"
+                    >
+                      <i class="bi bi-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">Gourmet Go</h3>
+                <p class="project-card__description">
+                  Plataforma enfocada en experiencia de usuario para exploración
+                  de productos gastronómicos.
+                </p>
+
+                <div class="project-card__tags">
+                  <span class="project-card__tag">UI/UX</span>
+                  <span class="project-card__tag">Frontend</span>
+                  <span class="project-card__tag">Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Copa Metropolitana -->
+            <article class="project-card project-card--hidden">
+              <div class="project-card__media">
+                <img
+                  src="assets/img/projects/copa-metropolitana.jpg"
+                  alt="Landing page Copa Metropolitana"
+                  class="project-card__image"
+                />
+
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-actions">
+                    <a
+                      href="#"
+                      class="btn-portfolio btn-portfolio--primary project-card__overlay-btn"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span>Ver demo</span>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="btn-portfolio btn-portfolio--outline project-card__overlay-btn"
+                    >
+                      <i class="bi bi-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__content">
+                <h3 class="project-card__title">Copa Metropolitana</h3>
+                <p class="project-card__description">
+                  Landing page desarrollada para difundir un campeonato de
+                  fútbol, con enfoque en jerarquía visual, diseño responsive y
+                  navegación clara.
+                </p>
+
+                <div class="project-card__tags">
+                  <span class="project-card__tag">HTML</span>
+                  <span class="project-card__tag">CSS</span>
+                  <span class="project-card__tag">Responsive</span>
+                  <span class="project-card__tag">Landing Page</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="projects__more text-center mt-5">
+            <button
+              class="btn-portfolio btn-portfolio--outline projects__toggle-btn"
+              id="btnToggleProjects"
+              type="button"
+              aria-expanded="false"
+            >
+              <i class="bi bi-plus-lg"></i>
+              <span>Ver más proyectos</span>
+            </button>
+          </div>
         </div>
       </section>
+      <!-- /Proyectos -->
 
       <!-- Precios — Paso 5 -->
       <section id="precios" class="section" aria-label="Tabla de Precios">
@@ -694,6 +934,7 @@
     <script src="./features/about/about.js"></script>
     <script src="./features/hero/hero.js"></script>
     <script src="./features/skills/skills.js"></script>
+    <script src="./features/projects/projects.js"></script>
     <script>
       document.getElementById("anioActual").textContent =
         new Date().getFullYear();
