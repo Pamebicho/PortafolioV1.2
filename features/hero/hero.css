@@ -59,30 +59,6 @@
   color: var(--color-text-muted);
 }
 
-.hero__badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-xl);
-}
-
-.hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.7rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background-color: rgba(255, 255, 255, 0.03);
-  color: var(--color-text);
-  font-size: var(--fs-small);
-  font-weight: var(--fw-medium);
-}
-
-.hero__badge i {
-  color: var(--color-accent);
-}
-
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
